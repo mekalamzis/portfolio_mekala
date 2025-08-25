@@ -1,0 +1,173 @@
+<!DOCTYPE html><html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>M.Mekala – Portfolio</title>
+  <meta name="description" content="Portfolio of M.Mekala – B.Tech Computer Science and Business Systems" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --bg:#ffffff;
+      --text:#111827;
+      --muted:#6b7280;
+      --primary:#2563eb;
+      --card:#f9fafb;
+      --ring:#93c5fd;
+      --border:#e5e7eb;
+    }
+    *{box-sizing:border-box}
+    html,body{height:100%}
+    body{
+      margin:0; background:var(--bg); color:var(--text);
+      font-family:Inter, system-ui, -apple-system, Segoe UI, Roboto, "Helvetica Neue", Arial, "Noto Sans", "Apple Color Emoji", "Segoe UI Emoji";
+      line-height:1.6;
+    }
+    .container{max-width:1024px; margin-inline:auto; padding:24px}
+    header{
+      position:sticky; top:0; backdrop-filter:saturate(1.2) blur(6px);
+      background:rgba(255,255,255,.8); border-bottom:1px solid var(--border);
+      z-index:10
+    }
+    nav{display:flex; align-items:center; justify-content:space-between; gap:16px}
+    .brand{display:flex; align-items:center; gap:12px; text-decoration:none; color:inherit}
+    .brand img{width:48px; height:48px; border-radius:50%; object-fit:cover; border:2px solid var(--border)}
+    .menu{display:flex; gap:16px; flex-wrap:wrap}
+    .menu a{color:var(--muted); text-decoration:none; font-weight:500}
+    .menu a:hover{color:var(--primary)}
+    .hero{display:grid; grid-template-columns:1.2fr .8fr; gap:32px; padding-block:48px; align-items:center}
+    @media (max-width: 860px){ .hero{grid-template-columns:1fr} }
+    .card{background:var(--card); border:1px solid var(--border); border-radius:16px; padding:20px}
+    h1{font-size:clamp(28px, 5vw, 44px); line-height:1.15; margin:0 0 8px}
+    h2{font-size:clamp(22px, 3.5vw, 28px); margin:0 0 12px}
+    h3{font-size:20px; margin:24px 0 8px}
+    .lead{color:var(--muted)}
+    .cta{display:flex; gap:12px; margin-top:16px; flex-wrap:wrap}
+    .btn{display:inline-flex; align-items:center; gap:8px; padding:10px 14px; border-radius:12px; text-decoration:none; font-weight:600; border:1px solid var(--border); background:#fff; color:var(--text)}
+    .btn.primary{background:var(--primary); color:#fff; border-color:var(--primary)}
+    .btn:focus-visible{outline:3px solid var(--ring); outline-offset:2px}
+    section{padding-block:28px; border-top:1px solid var(--border)}
+    .grid{display:grid; gap:16px}
+    .grid.two{grid-template-columns:repeat(2, 1fr)}
+    .grid.three{grid-template-columns:repeat(3, 1fr)}
+    @media (max-width: 800px){ .grid.two, .grid.three{grid-template-columns:1fr} }
+    .item{padding:16px; border:1px solid var(--border); border-radius:14px; background:#fff}
+    .meta{color:var(--muted); font-size:14px}
+    ul.clean{list-style:none; margin:0; padding:0; display:grid; gap:8px}
+    .tags{display:flex; gap:8px; flex-wrap:wrap}
+    .tag{padding:6px 10px; border-radius:999px; background:var(--card); border:1px solid var(--border); font-weight:600; font-size:14px}
+    footer{padding:24px; text-align:center; color:var(--muted)}
+    a.link{color:var(--primary); text-decoration:none}
+    a.link:hover{text-decoration:underline}
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <nav>
+        <a class="brand" href="#top">
+          <img src="profile.jpg" alt="Profile Photo of M.Mekala">
+          <div>
+            <strong>M.Mekala</strong><br>
+            <span class="meta">Pudukkottai · India</span>
+          </div>
+        </a>
+        <div class="menu">
+          <a href="#about">About</a>
+          <a href="#education">Education</a>
+          <a href="#certs">Certifications</a>
+          <a href="#skills">Skills</a>
+          <a href="#languages">Languages</a>
+          <a href="#contact">Contact</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+  <main id="top" class="container">
+    <section class="hero" id="about">
+      <div>
+        <h1>Hi, I'm <span style="color:var(--primary)">Mekala</span> 👋</h1>
+        <p class="lead">B.Tech — Computer Science and Business Systems</p>
+        <div class="card">
+          <p>"To leverage my technical knowledge and problem‑solving skills in a dynamic environment while continuously learning and enhancing my expertise. Seeking an opportunity to apply my engineering background to real‑world challenges, contribute to innovative projects, and grow as a professional in the technical field."</p>
+        </div>
+        <div class="cta">
+          <a class="btn primary" href="mailto:mekalamurugesan59@gmail.com">Email Me</a>
+          <a class="btn" href="https://www.linkedin.com/in/mekala-murugesan-3a53092a3" target="_blank" rel="noopener">LinkedIn</a>
+          <a class="btn" href="#contact">Contact</a>
+        </div>
+      </div>
+      <div class="card">
+        <img src="profile.jpg" alt="Profile Photo of M.Mekala" style="width:100%; border-radius:12px; margin-bottom:12px;">
+        <h2>Quick Info</h2>
+        <ul class="clean">
+          <li><strong>Phone:</strong> <a class="link" href="tel:+919043752801">+91 90437 52801</a></li>
+          <li><strong>Email:</strong> <a class="link" href="mailto:mekalamurugesan59@gmail.com">mekalamurugesan59@gmail.com</a></li>
+          <li><strong>Location:</strong> Pudukkottai, India</li>
+        </ul>
+      </div>
+    </section>
+    <section id="education">
+      <h2>Education</h2>
+      <div class="grid two">
+        <article class="item">
+          <h3>B.Tech — Computer Science & Business Systems</h3>
+          <div class="meta">K. Ramakrishnan College of Engineering · 2023</div>
+        </article>
+        <article class="item">
+          <h3>Higher Secondary (CBSE) — HSC</h3>
+          <div class="meta">Mount Zion International School · 74.6% · 2023</div>
+        </article>
+        <article class="item">
+          <h3>Secondary (CBSE) — SSLC</h3>
+          <div class="meta">Mount Zion International School · 80% · 2021</div>
+        </article>
+      </div>
+    </section>
+    <section id="certs">
+      <h2>Certifications</h2>
+      <div class="grid two">
+        <div class="item"><strong>NPTEL:</strong> Software Conceptual Design</div>
+        <div class="item"><strong>GUVI:</strong> Python, Gen AI</div>
+        <div class="item"><strong>DBHPS:</strong> Hindi Certificates</div>
+      </div>
+    </section>
+    <section id="skills">
+      <h2>Skills</h2>
+      <div class="item">
+        <div class="tags">
+          <span class="tag">C</span>
+          <span class="tag">Python</span>
+          <span class="tag">MS Word</span>
+          <span class="tag">MS PowerPoint</span>
+        </div>
+      </div>
+    </section>
+    <section id="languages">
+      <h2>Languages</h2>
+      <div class="grid three">
+        <div class="item"><strong>English</strong></div>
+        <div class="item"><strong>Tamil</strong></div>
+        <div class="item"><strong>Hindi</strong> — writing & reading</div>
+      </div>
+    </section>
+    <section id="contact">
+      <h2>Get in Touch</h2>
+      <div class="item">
+        <p>If you'd like to collaborate or have an opportunity, feel free to reach out.</p>
+        <p>
+          <a class="btn primary" href="mailto:mekalamurugesan59@gmail.com">Send an Email</a>
+          <a class="btn" href="https://www.linkedin.com/in/mekala-murugesan-3a53092a3" target="_blank" rel="noopener">Connect on LinkedIn</a>
+        </p>
+      </div>
+    </section>
+  </main>
+  <footer>
+    © <span id="y"></span> M.Mekala — Built with plain HTML & CSS
+  </footer>
+  <script>
+    document.getElementById('y').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
